@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('ocean-wallpaper.jpg');
+    display: flex;
+    flex-direction: row;
+}
+
+button, input, select {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.content-wrapper {
+    background-color: #065356;
+    z-index: 1;
+    width: 70vw;
+    height: 100vh;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0px;
+    left: 8vw;
+    color: white;
+}
+
+.form-wrapper {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    padding-left: 10vh;
+    min-height: 33vh;
+}
+
+.title-wrapper {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 30vw;
+    height: 12.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    top: 16vh;
+    letter-spacing: 0.2em;
+}
+
+form {
+    display: flex;
+    margin: 4px;
+    gap: 10vw;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.first-section, .second-section {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    row-gap: 4vh;
+}
+
+/* .second-section {
+    position: relative;
+    left: 20vh;
+} */
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+}
+
