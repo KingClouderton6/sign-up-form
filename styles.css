@@ -59,11 +59,19 @@ button, input, select {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
+    font-size: 84px;
+    font-family: 'MeyrinRegular';
+    font-weight: 10;
+    font-style: normal;
+    color: rgb(228, 255, 107);
     position: relative;
     top: 20vh;
+}
+
+.title-wrapper img {
+    height: 90%;
+    width: 90;
+    padding-right:10px;
 }
 
 h2 {
@@ -155,3 +163,4 @@ a:link {
 .error {
     border: 2px solid red;
 }
+
