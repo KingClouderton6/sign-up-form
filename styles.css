@@ -5,13 +5,13 @@
 
 :root {
     --generic-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --alignment: 30px;
+    --alignment: 25px;
 
     font-family: var(--generic-font);
 }
 
 body {
-    background-image: url('ocean-wallpaper.jpg');
+    background-image: url('tokyo-streets.jpg');
     display: flex;
     flex-direction: row;
     color: white;
@@ -23,7 +23,7 @@ button, input, select {
 }
 
 .content-wrapper {
-    background-color: rgba(0, 22, 95);
+    background-color: #2b2b2b;
     z-index: 1;
     width: 70vw;
     height: 100vh;
@@ -41,39 +41,40 @@ button, input, select {
 }
 
 .form-wrapper {
-    background-color: #0f8596;
+    background-color: #303439;
     display: flex;
-    color: black;
+    color: white;
     flex-direction: column;
-    padding: 10px;
-    box-shadow: 0 4px 2px black;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 2px black;
     min-height: 33vh;
+    overflow: hidden;
 }
 
 .title-wrapper {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 30vw;
-    height: 12.5vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 48px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
-    font-family: var(--generic-font);
     position: relative;
-    top: 16vh;
-    letter-spacing: 0.2em;
+    top: 20vh;
 }
 
 h2 {
-    padding-left: var(--alignment);
+    letter-spacing: 0.1em;
+    padding-left: 10px;
     font-family: sans-serif;
+    row-gap: 10px;
 }
 
 form {
-    padding-left: var(--alignment);
     display: flex;
-    margin: 4px;
     gap: 10vw;
     flex-flow: row;
     flex-wrap: nowrap;
@@ -83,9 +84,10 @@ form {
 }
 
 .first-section, .second-section {
+    padding-top: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
     row-gap: 4vh;
 }
 
@@ -95,18 +97,20 @@ form {
 } */
 
 .user-input {
-    color: rgb(41, 41, 41);
+    color: white;
     display: flex;
     flex-direction: column;
     row-gap: 5px;
 }
 
 input {
-    
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .action-container, p.call-to-action {
-    padding-left: 10px;
+    padding-left: 15px;
+    overflow: hidden;
 }
 
 .action-container {
@@ -119,18 +123,35 @@ input {
 p.call-to-action {
     font-size: 1.5rem;
     font-family: var(--generic-font);
-    width: 700px;
+    width: 80%;
     padding-left: var(--alignment);
 }
 
 button {
-    width: 15vw;
-    height: 5vh;
-    background-color: #f1b100;
+    width: 150px;
+    height: 50px;
+    background-color: #ee7147;
     border: 1px solid grey;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 button:hover {
     background-color: #05af05;
+}
+
+a:visited {
+    color: orangered;
+}
+
+a:link {
+    color: purple;
+}
+
+.focus {
+    border: 2px solid rgb(11, 11, 156);
+    box-shadow: 0px 2px black;
+}
+
+.error {
+    border: 2px solid red;
 }
